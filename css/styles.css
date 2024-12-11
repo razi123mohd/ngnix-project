@@ -1,0 +1,212 @@
+/* Common Styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4; /* Default background color */
+    color: #333; /* Default text color */
+}
+
+/* Common heading styles */
+h1, h2 {
+    text-align: center;
+    margin: 20px 0;
+}
+
+/* Links */
+a {
+    text-decoration: none;
+    color: #4CAF50; /* Green color for links */
+    font-weight: bold;
+}
+
+a:hover {
+    color: #45a049; /* Darker green on hover */
+}
+
+/* Button Styles */
+button {
+    background-color: #4CAF50; /* Green background */
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s ease; /* Smooth hover transition */
+}
+
+button:hover {
+    background-color: #45a049; /* Darker green on hover */
+}
+
+/* Input Fields */
+input[type="text"], input[type="password"], input[type="email"] {
+    width: 100%;
+    padding: 12px;
+    margin: 10px 0;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    font-size: 16px;
+}
+
+input[type="text"]:focus, input[type="password"]:focus, input[type="email"]:focus {
+    outline: none;
+    border-color: #4CAF50; /* Green border when focused */
+}
+
+/* Login Page Styles */
+.login-container {
+    width: 100%;
+    max-width: 400px;
+    margin: 100px auto;
+    padding: 20px;
+    background-color: rgba(0, 0, 0, 0.7); /* Darker background with transparency */
+    color: white;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3); /* Shadow effect */
+    text-align: center;
+}
+
+.login-container h1 {
+    font-size: 2em;
+    margin-bottom: 20px;
+}
+
+.login-container input {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+}
+
+.login-container button {
+    width: 100%;
+    padding: 12px;
+    margin-top: 10px;
+    background-color: #4CAF50;
+    color: white;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.login-container button:hover {
+    background-color: #45a049;
+}
+
+/* Background for Login Page */
+body.login-page {
+    background-image: url('test.jpg'); /* Path to login-specific background image */
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+}
+
+/* Index Page Styles */
+.welcome-container {
+    width: 100%;
+    max-width: 600px;
+    margin: 100px auto;
+    padding: 20px;
+    background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent dark background */
+    color: white;
+    text-align: center;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+}
+
+.welcome-container h1 {
+    font-size: 2.5em;
+    margin-bottom: 20px;
+}
+
+.welcome-container p {
+    font-size: 1.2em;
+    margin-bottom: 20px;
+}
+
+/* Background for Index Page */
+body.index-page {
+    background-image: url('login.jpg'); /* Path to the welcome image */
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+}
+
+/* Utility Classes */
+
+/* Centered container with padding */
+.container {
+    padding: 20px;
+    margin: 0 auto;
+    width: 90%;
+    max-width: 1200px;
+}
+
+/* Flexbox for centering content */
+.center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Full-width container */
+.full-width {
+    width: 100%;
+}
+
+/* Text Centering */
+.text-center {
+    text-align: center;
+}
+
+/* Footer Styles */
+footer {
+    background-color: #333;
+    color: white;
+    padding: 20px 0;
+    text-align: center;
+    font-size: 14px;
+}
+
+footer a {
+    color: #4CAF50;
+}
+
+footer a:hover {
+    color: #45a049;
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+    .login-container {
+        width: 90%;
+        padding: 15px;
+    }
+
+    .welcome-container {
+        width: 90%;
+        padding: 15px;
+    }
+}
+
+@media (max-width: 480px) {
+    .login-container h1 {
+        font-size: 1.8em;
+    }
+
+    .welcome-container h1 {
+        font-size: 2em;
+    }
+
+    .welcome-container p {
+        font-size: 1em;
+    }
+
+    button {
+        font-size: 14px;
+    }
+}
